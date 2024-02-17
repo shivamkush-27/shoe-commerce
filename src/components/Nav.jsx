@@ -3,8 +3,7 @@ import { headerLogo } from '../assets/images';
 import { hamburger } from '../assets/icons';
 import { navLinks } from '../constants';
 import { PiBagSimpleLight } from "react-icons/pi";
-import { CiHeart } from "react-icons/ci";
-import { CiSearch } from "react-icons/ci";
+import { FaRegHeart } from "react-icons/fa";
 
 
 const Nav = () => {
@@ -26,9 +25,9 @@ const Nav = () => {
                     </ul>
                     <div>
                         <ul className='flex column-3 items-center justify-center gap-2'>
-                            <li><form><input type="text" name="text" placeholder='Search...' className='bg-slate-200 py-2 pl-5 rounded-full text-white' /></form></li>
-                            <li><CiHeart /></li>
-                            <li><PiBagSimpleLight /></li>
+                            <li><form><input type="text" name="text" placeholder='Search...' className='bg-slate-200 py-2 pl-5 rounded-full' /></form></li>
+                            <li className='text-3xl cursor-pointer p-2 rounded-full hover:bg-slate-300'><FaRegHeart /></li>
+                            <li className='text-3xl cursor-pointer p-2 rounded-full hover:bg-slate-300'><PiBagSimpleLight /></li>
                         </ul>
                     </div>
                 </nav>
