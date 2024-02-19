@@ -8,7 +8,7 @@ import { FaRegHeart } from "react-icons/fa";
 
 const Nav = () => {
     return (
-        <header className='padding-x py-8 absolute z-10 w-full'>
+        <header className='padding-x py-8 absolute z-10 w-full select-none'>
             <div className='column-3'>
                 <nav className='flex justify-between items-center max-container'>
                     <a href="/">
@@ -23,12 +23,12 @@ const Nav = () => {
                             </li>
                         ))}
                     </ul>
-                    <div>
-                        <ul className='flex column-3 items-center justify-center gap-2'>
-                            <li><form><input type="text" name="text" placeholder='Search...' className='bg-slate-200 py-2 pl-5 rounded-full' /></form></li>
-                            <li className='text-3xl cursor-pointer p-2 rounded-full hover:bg-slate-300'><FaRegHeart /></li>
-                            <li className='text-3xl cursor-pointer p-2 rounded-full hover:bg-slate-300'><PiBagSimpleLight /></li>
-                        </ul>
+                    <ul className='flex column-3 items-center justify-center gap-2 max-lg:hidden'>
+                        <li className='text-3xl cursor-pointer p-2 rounded-full hover:bg-slate-300'><FaRegHeart /></li>
+                        <li className='text-3xl cursor-pointer p-2 rounded-full hover:bg-slate-300'><PiBagSimpleLight /></li>
+                    </ul>
+                    <div className='hidden max-lg:block'>
+                        <img src={hamburger} alt="Hamburger" width={25} height={25} />
                     </div>
                 </nav>
             </div>
