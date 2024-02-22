@@ -96,7 +96,6 @@ export const footerLinks = [
             { name: "Air Jordan 1", link: "/" },
             { name: "Air Force 2", link: "/" },
             { name: "Nike Waffle Racer", link: "/" },
-            { name: "Nike Cortez", link: "/" },
         ],
     },
     {
@@ -104,16 +103,17 @@ export const footerLinks = [
         links: [
             { name: "About us", link: "/" },
             { name: "FAQs", link: "/" },
-            { name: "How it works", link: "/" },
-            { name: "Privacy policy", link: "/" },
-            { name: "Payment policy", link: "/" },
+            { name: "Privacy Policy", link: "/" },
+            { name: "Refund Policy", link: "/" },
+            { name: "Return Policy", link: "/" },
         ],
     },
     {
         title: "Get in touch",
         links: [
-            { name: "customer@nike.com", link: "mailto:customer@nike.com" },
-            { name: "+92554862354", link: "tel:+92554862354" },
+            { name: "customer@nike.com", link: "mailto:customer@nike.com", target: "_self" },
+            { name: "+91 1234567890", link: "tel:+911234567890", target: "_self" },
+            { name: "New Delhi, India", link:"https://maps.app.goo.gl/eNpwcS3NffXLfMZf8", target: "_blank"}
         ],
     },
 ];
